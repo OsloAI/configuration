@@ -12,8 +12,7 @@ anacode, nvdia, pytorch, 创建虚拟内存
 1）sudo apt install bzip2 tmux zsh htop git-core 
 2）export PATH=/root/anaconda3/bin:$PATH
 
-anaconda
-# https://www.anaconda.com/download/
+anaconda 
 1) wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
 2) bash Anaconda3-5.2.0-Linux-x86_64.sh
 
