@@ -13,24 +13,29 @@ anacode, nvdia, pytorch, 创建虚拟内存
 2）export PATH=/root/anaconda3/bin:$PATH
 
 anaconda 
+
 1) wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
 2) bash Anaconda3-5.2.0-Linux-x86_64.sh
 
 nvdia
+
 wget http://us.download.nvidia.com/tesla/384.66/nvidia-diag-driver-local-repo-ubuntu1404-384.66_1.0-1_amd64.deb
 1) sudo apt-key add /var/nvidia-diag-driver-local-repo-384.66/7fa2af80.pub
 2) sudo dpkg -i nvidia-diag-driver-local-repo-ubuntu1404-384.66_1.0-1_amd64.deb
 3) sudo apt-get update`
 4) sudo apt-get install cuda-drivers
 
-#cuda https://developer.nvidia.com/cuda-80-ga2-download-archive
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
-Installation Instructions:
-1) sudo dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
-2) sudo apt-get update
-3) sudo apt-get install cuda
+cuda 
+
+#https://developer.nvidia.com/cuda-80-ga2-download-archive
+
+1) wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+2) sudo dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+3) sudo apt-get update
+4) sudo apt-get install cuda
 
 pytorch
+
 #https://pytorch.org/
 
 1)bash
@@ -59,5 +64,5 @@ mkswap /root/swapfile
 swapon /root/swapfile
 
 
-如果配置过程中有什么疑惑可以联系我
+如果配置过程中有什么疑惑可以在issues 直接给我留言
 
