@@ -9,8 +9,9 @@ anacode, nvdia, pytorch, 创建虚拟内存
 
 
 基本步骤
-1）sudo apt install bzip2 tmux zsh htop git-core 
-2）export PATH=/root/anaconda3/bin:$PATH
+
+1) sudo apt install bzip2 tmux zsh htop git-core 
+2) export PATH=/root/anaconda3/bin:$PATH
 
 anaconda 
 
@@ -46,18 +47,30 @@ pytorch
 创建虚拟内存
 
 #停止所有的swap分区
+
 swapoff -a 
+
 #创建要作为swap分区的文件:增加1GB大小的交换分区，则命令写法如下，
+
 #其中的count等于想要的块的数量（bs*count=文件大小）
+
 dd if=/dev/zero of=/root/swapfile bs=1M count=153600
+
 #格式化为交换分区文件:
+
 mkswap /root/swapfile #建立swap的文件系统
+
 #启用交换分区文件:
+
 swapon /root/swapfile #启用swap文件
+
 #(非必做)使系统开机时自启用，在文件/etc/fstab中添加一行：
+
 /root/swapfile swap swap defaults 0 0
 
+
 示例：创建150M 虚拟内存
+
 sudo su
 dd if=/dev/zero of=/root/swapfile bs=1M count=153600
 mkswap /root/swapfile 
