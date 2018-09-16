@@ -39,9 +39,9 @@ pytorch
 
 #https://pytorch.org/
 
-1)bash
-2)conda install pytorch torchvision -c pytorch
-3)conda install pytorch-cpu torchvision-cpu -c pytorch # no cuda，安装了2，那就不用管3了。
+1) bash
+2) conda install pytorch torchvision -c pytorch
+3) conda install pytorch-cpu torchvision-cpu -c pytorch # no cuda，安装了2，那就不用管3了。
 
 
 创建虚拟内存
